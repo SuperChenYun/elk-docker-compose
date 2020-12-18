@@ -1,0 +1,10 @@
+transport.host: 0.0.0.0
+cluster.name: elasticsearch
+node.name: data-node2
+node.master: true
+node.data: true
+network.host: 0.0.0.0
+http.port: 9200
+discovery.seed_hosts:
+  ["elasticsearch", "elasticsearch-data1", "elasticsearch-data2"]
+cluster.initial_master_nodes: ["master-node", "data-node1", "data-node2"]
