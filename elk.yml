@@ -33,8 +33,8 @@ services:
       - /data/elasticsearch-data1/logs:/usr/share/elasticsearch/logs
       - /data/elasticsearch-data1/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     ports:
-      - 19201:9200
-      - 19301:9300
+      - 9201:9200
+      - 9301:9300
   elasticsearch-data2:
     image: elasticsearch:7.3.0
     container_name: elasticsearch-data2
@@ -50,8 +50,8 @@ services:
       - /data/elasticsearch-data2/logs:/usr/share/elasticsearch/logs
       - /data/elasticsearch-data2/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     ports:
-      - 19202:9200
-      - 19302:9300
+      - 9202:9200
+      - 9302:9300
   kibana:
     image: kibana:7.3.0
     container_name: kibana
